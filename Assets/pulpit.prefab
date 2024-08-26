@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1943874626100558555}
   - component: {fileID: 802643739284399400}
   - component: {fileID: 4301302427126769355}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,10 +114,9 @@ GameObject:
   - component: {fileID: 2061770399723042644}
   - component: {fileID: 7071840300903515093}
   - component: {fileID: 7550352986126477011}
-  - component: {fileID: 8918744137601933687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pulpit
-  m_TagString: Untagged
+  m_TagString: Pulpit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,19 +208,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8918744137601933687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2628795327911790080}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49105ca033db4e1419a4f9eea0c280ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tmpText: {fileID: 7323911974633882098}
 --- !u!1 &4602487212785596106
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,8 +219,7 @@ GameObject:
   - component: {fileID: 1730076385460078203}
   - component: {fileID: 2356554422224445880}
   - component: {fileID: 7323911974633882098}
-  - component: {fileID: 1492419359144159723}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,15 +342,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1492419359144159723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4602487212785596106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da2b9b1f4077cf74e8bd12a07251494d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
