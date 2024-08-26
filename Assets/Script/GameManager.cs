@@ -1,27 +1,51 @@
+
+
+
 using UnityEngine;
-using TMPro; 
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText; 
+    public UIManager uiManager; 
     private int score = 0;
 
-    void Start()
-    {
-        UpdateScoreText();
-    }
+   
 
     public void UpdateScore()
     {
-        score++;
-        UpdateScoreText();
+        score++; 
+        UpdateScoreText(); 
     }
 
     private void UpdateScoreText()
     {
         
-            scoreText.text =  ""+score;
-            Debug.Log(score);
+        if (scoreText != null)
+        {
+            scoreText.text = "" + score; 
+        }
+    }
+
+    public void EndGame()
+    {
         
+        if (uiManager != null)
+        {
+            uiManager.ShowGameOverScreen();
+        }
+        
+    }
+
+    public void ResetGame()
+    {
+        
+        score = 0;
+        UpdateScoreText();
+       
+        if (uiManager != null)
+        {
+            uiManager.ShowStartScreen();
+        }
     }
 }

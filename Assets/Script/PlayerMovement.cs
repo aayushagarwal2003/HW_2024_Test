@@ -4,9 +4,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
-    public GameManager gameManager; 
+    public GameManager gameManager;
     public float raycastDistance = 1.0f;
-    public LayerMask pulpitLayer; 
+    public LayerMask pulpitLayer;
 
     private Vector3 moveDirection;
     private GameObject currentPulpit;
@@ -29,25 +29,25 @@ public class PlayerMovement : MonoBehaviour
     void CheckForPulpitBelow()
     {
         RaycastHit hit;
-        
+
         if (Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance, pulpitLayer))
         {
-            
+
             if (hit.collider.CompareTag("Pulpit"))
             {
-                
+
                 if (hit.collider.gameObject != currentPulpit)
                 {
                     currentPulpit = hit.collider.gameObject;
-                    gameManager.UpdateScore(); 
+                    gameManager.UpdateScore();
 
-                   
+
                 }
             }
         }
         else
         {
-            
+
             currentPulpit = null;
         }
     }
